@@ -160,7 +160,7 @@ Tunnels can be managed from the main menu (`tunnels start ...`) or from inside a
 
 ```bash
 # Inside interact session
-lportfwd 35900 192.168.2.3 5900      # Forward local:35900 → target:5900
+lportfwd 35900 10.0.0.5 5900         # Forward local:35900 → target:5900
 socks5 1080                          # SOCKS5 proxy on local:1080
 rportfwd 4444 127.0.0.1 4444        # Agent port → attacker
 ```

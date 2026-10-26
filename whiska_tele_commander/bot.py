@@ -26,13 +26,14 @@ logging.basicConfig(format="%(asctime)s [%(name)s] %(levelname)s: %(message)s", 
 log = logging.getLogger("whiska-tg")
 
 # ─── Config ──────────────────────────────────────────────────────────
-BOT_TOKEN = os.environ.get("WHISKA_BOT_TOKEN", "8649153235:AAFfu4cmAvXGBZy8s9QeScGRGL_wn4dZKS4")
-C2_HOST = os.environ.get("WHISKA_C2_HOST", "product.crackbox.me")
+# All secrets must be set via environment variables — no defaults.
+BOT_TOKEN = os.environ.get("WHISKA_BOT_TOKEN", "")
+C2_HOST = os.environ.get("WHISKA_C2_HOST", "")
 C2_PORT = int(os.environ.get("WHISKA_C2_PORT", "443"))
 C2_ENDPOINT = os.environ.get("WHISKA_C2_ENDPOINT", "/endpoint")
 C2_USER_PREFIX = "tg-"
-C2_PASS = os.environ.get("WHISKA_C2_PASS", "Supermaldev1337!@#")
-BOT_PASSWORD = os.environ.get("WHISKA_BOT_PASS", "Thanglong@1890##")
+C2_PASS = os.environ.get("WHISKA_C2_PASS", "")
+BOT_PASSWORD = os.environ.get("WHISKA_BOT_PASS", "")
 MAX_LOGIN_ATTEMPTS = 3
 LOCKOUT_SECONDS = 900  # 15 minutes
 
