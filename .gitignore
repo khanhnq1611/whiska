@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+dist/
+build/
+
+# Virtual environment
+venv/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Upstream reference (not part of this project)
+upstream/
+
+# Downloads & temp
+downloads/
+screenshots/
+*.db
+*.sqlite
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Claude Code
+.claude/
+
+# UAC bypass tool (sensitive, not for public repo)
+whiskacli/data/j3uac.exe
+*.venv_build/

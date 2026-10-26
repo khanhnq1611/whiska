@@ -1,0 +1,15 @@
+[Unit]
+Description=Whiska Telegram Commander
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=toro
+WorkingDirectory=/home/toro/workspaces/khanhnguyen/adaptixcli
+ExecStart=/home/toro/workspaces/khanhnguyen/adaptixcli/venv/bin/python -m whiska_tele_commander
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
